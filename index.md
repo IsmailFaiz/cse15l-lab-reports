@@ -6,14 +6,14 @@ Remotely Connecting
 
 Trying Some Commands
 
-![Image](image/a.png)
+![Image](a.png)
 
 ---
 
-![Image](image/b.png)
+![Image](b.png)
 
 ---
 
-![Image](image/c.png)
+![Image](c.png)
 
 ---
