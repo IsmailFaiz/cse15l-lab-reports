@@ -1,18 +1,24 @@
-Installing VScode
+## Installing VScode
 
-Go to the Visual Studio Code [website](https://code.visualstudio.com/), and follow the instructions to download and install it on your computer. There are versions for all the major operating systems, like OSX (for Macs) and Windows (for PCs). Make sure you download and install the correct version. The default settings should work just well.
+Installing VScode on your machine should be relatively straightforward. 
 
-Remotely Connecting
+First, go to the Visual Studio Code [website](https://code.visualstudio.com/), and follow the instructions. There are versions for all the major operating systems, like OSX (for Macs) and Windows (for PCs). Make sure you download and install the correct version for ypour system. Follow the installation instructions and select the desired configuration. The default settings should work just well.
 
-Trying Some Commands
+Second? Oh there is no second—you are good to go!
 
 ![Image](a.png)
 
 ---
 
+## Remotely Connecting
+
+Now. to remotely connect to the 
+
 ![Image](b.png)
 
 ---
+
+## Trying Some Commands
 
 ![Image](c.png)
 
