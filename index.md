@@ -1,4 +1,4 @@
-Greetings newbies! Indeed, you are now facing the very first lab work for your CSE 15L course. I distinctly recall the horrors of ambiguity and the torture of enigma that I had to face my very first time. Oh, you don't want me to describe any of those to you. Instead, to help you on your grueling yet marvelous journey through this course, I have written this tutorial that shall guide you and keep you away from any diabolical bugs.
+You are not welcome! Indeed, you are now facing the very first lab work for your CSE 15L course. I distinctly recall the horrors of ambiguity and the torture of enigma that I had to face my very first time. Oh, you don't want me to describe any of those to you. Instead, to help you on your grueling yet marvelous journey through this course, I have written this tutorial that shall guide you and keep you away from any diabolical bugs.
 
 ## Installing VScode
 
