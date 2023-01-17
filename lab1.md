@@ -8,7 +8,7 @@ First, go to the Visual Studio Code [website](https://code.visualstudio.com/), a
 
 Second? Oh there is no second—you are good to go!
 
-![Image](a.png)
+![Image](a.jpg)
 
 ---
 
@@ -24,7 +24,7 @@ If you are a windows user, then you have an additional step before you can proce
 
 And that's it! Your terminal is remotely connected to a UCSD server.
 
-![Image](b.png)
+![Image](b.jpg)
 
 ---
 
@@ -32,8 +32,18 @@ And that's it! Your terminal is remotely connected to a UCSD server.
 
 You are now ready to run some commands and explore the remote client-server setup.
 
-* 'code'
+* Enter `pwd` to check your current working directory
+* Enter `cd ..` to change your directory to the immediate parent. Entering `pwd` will now give another working directory.
+* Enter `cd ~` to return back to your home directory.
+* Try `cat hello.txt`. This will give you an error as you don't have any file named "hello.txt" in your current folder.
+* Now, type `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/` to copy the "hello.txt" already provided publicly in another folder to your own current folder.
+* Trying `cat hello.txt` will now work and show you its contents.
+* Entering `ls` to view the list of files and folders in your current directory will also show you the recently copied "hello.txt".
+* You can enter `rm hello.txt` to remove it. Check the list of files again using `ls` to see if it is still in your current directory. 
+* Type `exit` to log out of the remote server.
+* Try `pwd` again to notice your working directory change back to your local computer.
+* Finally, press Ctrl-L to clear the terminal! 
 
-![Image](c.png)
+![Image](c.jpg)
 
 ---
