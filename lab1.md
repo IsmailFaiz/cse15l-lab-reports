@@ -16,9 +16,9 @@ Second? Oh there is no second—you are good to go!
 
 This could be the hardest part of the lab exercise, but, nevertheless, is pretty straightforward. 
 
-If you are a windows user, then you have an additional step before you can proceed. Install Git for Windows and set your default terminal to use the newly installed git bash in Visual Studio Code 
+If you are a windows user, then you have an additional step before you can proceed. Install [Git for Windows](https://gitforwindows.org/) and set your default terminal to use the newly installed git bash in Visual Studio Code. To do the latter, you can make use of this post on [Stack Overflow](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994). You are all ready now.
 
-* Firstly, make sure you have git installed on your 
+* Replace "zz" with the letters in your course-specific account in the following: "ssh cs15lwi23<ins>zz</ins>@ieng6.ucsd.edu". Then enter the resulting command in your bash terminal.
 * 
 
 ![Image](b.png)
