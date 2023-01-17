@@ -1,4 +1,4 @@
-Greetings newbies! Indeed, you are now facing the very first lab work for your CSE 15L course. I distinctly recall the horrors of ambiguity and the torture of enigma that I had to face my first very time. Oh, you don't want me to describe any of those to you. Instead, to help you on your grueling yet marvelous journey through this course, I have written this tutorial that shall guide you and keep you away from any diabolical bugs.
+Greetings newbies! Indeed, you are now facing the very first lab work for your CSE 15L course. I distinctly recall the horrors of ambiguity and the torture of enigma that I had to face my very first time. Oh, you don't want me to describe any of those to you. Instead, to help you on your grueling yet marvelous journey through this course, I have written this tutorial that shall guide you and keep you away from any diabolical bugs.
 
 ## Installing VScode
 
@@ -42,7 +42,7 @@ You are now ready to run some commands and explore the remote client-server setu
 * You can enter `rm hello.txt` to remove it. Check the list of files again using `ls` to see if it is still in your current directory. 
 * Type `exit` to log out of the remote server.
 * Try `pwd` again to notice your working directory change back to your local computer.
-* Finally, press Ctrl-L to clear the terminal! 
+* Finally, hold Ctrl-L to clear the terminal! 
 
 ![Image](c.jpg)
 
