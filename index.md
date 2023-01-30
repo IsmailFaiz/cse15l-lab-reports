@@ -14,11 +14,12 @@ Second? Oh there is no second—you are good to go!
 
 ## Remotely Connecting
 
-This could be the hardest part of the lab exercise, but, nevertheless, is pretty straightforward. 
+This could be the hardest part of the lab exercise, but, nevertheless, is pretty straightforward.
 
 If you are a windows user, then you have an additional step before you can proceed. Install [Git for Windows](https://gitforwindows.org/) and set your default terminal to use the newly installed git bash in Visual Studio Code. To do the latter, you can make use of this post on [Stack Overflow](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994). You are all ready now.
 
-* Replace "zz" with the letters in your course-specific account in the following: "ssh cs15lwi23<ins>zz</ins>@ieng6.ucsd.edu". Then enter the resulting command in your bash terminal.
+* Head to the following [Link](https://sdacs.ucsd.edu/~icc/index.php) to find your course-specific account. It should start with "cs15l" followed by a small alphanumeric code. If you are unable to do this, then you may need to reset your password. This is common and will take a couple minutes. Follow this very detailed [tutorial](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) on how to do it correctly.
+* Replace "zz" with the letters in your course-specific account in the following: `ssh cs15lwi23<ins>zz</ins>@ieng6.ucsd.edu`. Then enter the resulting command in your bash terminal.
 * You will probably see a series of messages ending with a (yes/no/fingerprint) question. Answer it with "yes".
 * Now, you will be prompted to enter your password. Enter your Student SSO password to receive authentication. (When you type your password it might seem that the terminal is not receiving anything. However, this is not the case. The characters you enter are simply not made visible for your security.)
 
