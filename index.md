@@ -54,6 +54,60 @@ Below is the screenshot of the secpnd URL request. The following methods from `S
 
 # Part 2
 
+## Failuring-inducing input
+
+```
+@Test
+public void testReversed() {
+    int[] input1 = { 1 , 3 };
+    assertArrayEquals(new int[]{ 3, 1 }, ArrayExamples.reversed(input1));
+}
+```
+
+## Non-failuring-inducing input
+
+```
+@Test
+public void testReversed2() {
+    int[] input1 = { 1 };
+    assertArrayEquals(new int[]{ 1 }, ArrayExamples.reversed(input1));
+}
+```
+
+## Symptom
+
+| ![Image](c3.jpg) | 
+|:--:| 
+| *Running JUnit test __with__ failure-inducing input* 
+
+| ![Image](d3.jpg) | 
+|:--:| 
+| *Running JUnit test __without__ failure-inducing input* 
+
+## Buggy Code
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+}
+```
+
+## Fixed Code
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+        newArray[i] = arr[arr.length - i - 1];
+    }
+    return arr;
+}
+```
+
 # Part 3
 
 In Lab 2, I learned how to deploy a web server locally (localhost). It was very interesting to learn the elementary blocks behind a web server's design. For example, I never closely examined the URL a user is transferred to after a simple Google search. After learning and implementing a simple search engine, I realized that the url itself includes pieces of information as multiple queries arranged after an `?` sign. This helped me gain better intuition and a surface-level understanding of youtube and google search URLs.
