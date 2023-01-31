@@ -1,6 +1,4 @@
-Greetings Newbies! Indeed, you are now facing the very first lab work for your CSE 15L course. I distinctly recall the horrors of ambiguity and the torture of enigma that I had to face my very first time. Oh, you don't want me to describe any of those to you. Instead, to help you on your grueling yet marvelous journey through this course, I have written this tutorial that shall guide you and keep you away from any diabolical bugs.
-
-## Installing VScode
+## Part 1
 
 Installing VScode on your machine should be relatively straightforward. 
 
@@ -12,7 +10,7 @@ Second? Oh there is no second—you are good to go!
 
 ---
 
-## Remotely Connecting
+## Part 2
 
 This could be the hardest part of the lab exercise, but, nevertheless, is pretty straightforward.
 
@@ -29,7 +27,7 @@ And that's it! Your terminal is remotely connected to a UCSD server.
 
 ---
 
-## Trying Some Commands
+## Part 3
 
 You are now ready to run some commands and explore the remote client-server setup.
 
