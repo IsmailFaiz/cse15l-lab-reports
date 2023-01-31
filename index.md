@@ -56,4 +56,4 @@ Below is the screenshot of the secpnd URL request. The following methods from `S
 
 # Part 3
 
-In Lab 2, I learned how to deploy a web server locally (localhost). It was very interesting to learn the elementary blocks behind a web server's design. For example, I never really examined the URL a user is transferred to after a simple Google search. After learning that the url itself includes pieces of information as multiple queries arranged after an `?` sign, understanding simple youtube and google search URLs seemed more intuitive.
+In Lab 2, I learned how to deploy a web server locally (localhost). It was very interesting to learn the elementary blocks behind a web server's design. For example, I never closely examined the URL a user is transferred to after a simple Google search. After learning and implementing a simple search engine, I realized that the url itself includes pieces of information as multiple queries arranged after an `?` sign. This helped me gain better intuition and a surface-level understanding of youtube and google search URLs.
