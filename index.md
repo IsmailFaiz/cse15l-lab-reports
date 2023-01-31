@@ -35,7 +35,7 @@ class StringServer {
     }
 }
 ```
-Below is the screenshot of the first URL request. When `StringServer.java` is run, the following methods from `StringServer.java` are called:
+Below is the screenshot of the first URL request. The following methods from `StringServer.java` are called:
 - `StringServer.main` with argument `999`.
 - `Handler.handleRequest` with argument `localhost:999/add-message?s=IsThisWorking???`.
 - The value of data field `conversation` changes from `""` to `"IsThisWorking???\n"`.
@@ -44,7 +44,7 @@ Below is the screenshot of the first URL request. When `StringServer.java` is ru
 |:--:| 
 | *Screenshot of first URL request* 
 
-Below is the screenshot of the secpnd URL request. When `StringServer.java` is run, the following methods from `StringServer.java` are called:
+Below is the screenshot of the secpnd URL request. The following methods from `StringServer.java` are called:
 - `Handler.handleRequest` with argument `localhost:999/add-message?s=OfCOurseThisIsWorking!`.
 - The value of data field `conversation` changes from `"IsThisWorking???\n"` to `"IsThisWorking???\nOfCOurseThisIsWorking!\n"`.
 
@@ -55,3 +55,5 @@ Below is the screenshot of the secpnd URL request. When `StringServer.java` is r
 # Part 2
 
 # Part 3
+
+In Lab 2, I learned how to deploy a web server locally (localhost). It was very interesting to learn the elementary blocks behind a web server's design. For example, I never really examined the URL a user is transferred to after a simple Google search. After learning that the url itself includes pieces of information as multiple queries arranged after an `?` sign, understanding simple youtube and google search URLs seemed more intuitive.
