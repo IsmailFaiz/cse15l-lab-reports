@@ -54,6 +54,8 @@ Below is the screenshot of the secpnd URL request. The following methods from `S
 
 # Part 2
 
+Debugging method `reversed(int[] arr)` from `ArrayExamples.java`.
+
 ## Failuring-inducing input
 
 ```
@@ -107,6 +109,8 @@ static int[] reversed(int[] arr) {
     return arr;
 }
 ```
+
+The method required a very simple fix. The buggy code assigns values to the wrong array `arr[]` instead of `newArray[]`. Swapping them around fixes the bug and the method works as expected.
 
 # Part 3
 
