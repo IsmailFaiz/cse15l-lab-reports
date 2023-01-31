@@ -37,7 +37,7 @@ class StringServer {
 ```
 
 
-| ![Image](a3.jpg) | 
+| ![Image](a3.jpg) [Image](b3.jpg) | 
 |:--:| 
 | *Caption?* 
 
