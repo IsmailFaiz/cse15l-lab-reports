@@ -1,13 +1,12 @@
-## Part 1
+# Part 1
 
-# StringServer.java
+## StringServer.java
 
 ```
 import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-
     public String conversation = "";
 
     public String handleRequest(URI url) {
@@ -48,7 +47,7 @@ Second? Oh there is no second—you are good to go!
 
 ---
 
-## Part 2
+# Part 2
 
 This could be the hardest part of the lab exercise, but, nevertheless, is pretty straightforward.
 
@@ -65,7 +64,7 @@ And that's it! Your terminal is remotely connected to a UCSD server.
 
 ---
 
-## Part 3
+# Part 3
 
 You are now ready to run some commands and explore the remote client-server setup.
 
