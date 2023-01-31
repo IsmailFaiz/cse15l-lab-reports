@@ -35,14 +35,22 @@ class StringServer {
     }
 }
 ```
+Below is the screenshot of the first URL request. When `StringServer.java` is run, the following methods from `StringServer.java` are called:
+- `StringServer.main` with argument `999`.
+- `Handler.handleRequest` with argument `localhost:999/add-message?s=IsThisWorking???`.
+- The value of data field `conversation` changes from `""` to `"IsThisWorking???\n"`.
 
-
-| ![Image](a3.jpg) [Image](b3.jpg) | 
+| ![Image](a3.jpg) | 
 |:--:| 
-| *Caption?* 
+| *Screenshot of first URL request* 
 
-![Image](b3.jpg)
+Below is the screenshot of the secpnd URL request. When `StringServer.java` is run, the following methods from `StringServer.java` are called:
+- `Handler.handleRequest` with argument `localhost:999/add-message?s=OfCOurseThisIsWorking!`.
+- The value of data field `conversation` changes from `"IsThisWorking???\n"` to `"IsThisWorking???\nOfCOurseThisIsWorking!\n"`.
 
+| ![Image](b3.jpg) | 
+|:--:| 
+| *Screenshot of second URL request* 
 
 # Part 2
 
