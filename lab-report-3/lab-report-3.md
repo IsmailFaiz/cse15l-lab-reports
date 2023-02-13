@@ -1,24 +1,24 @@
 # Four ways to use the `less` command
 
-1. `less *` and `:n`, `:p`
+## 1. `less *` and `:n`, `:p`
 
 ![Image](a1.jpg)
 
 ![Image](a2.jpg)
 
-2. `less -p <pattern>`
+## `less -p <pattern>`
 
 ![Image](b1.jpg)
 
 ![Image](b2.jpg)
 
-3. `less -N`
+## 3. `less -N`
 
 ![Image](c1.jpg)
 
 ![Image](c2.jpg)
 
-4. `less =F`
+## 4. `less =F`
 
 ![Image](d1.jpg)
 
