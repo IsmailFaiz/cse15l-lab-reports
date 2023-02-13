@@ -4,25 +4,37 @@
 
 | ![Image](a1.jpg) | 
 |:--:| 
-| *First example: `less *`* 
-| *First example: `less *`* 
+| *First example*
 
-![Image](a2.jpg)
+| ![Image](a2.jpg) | 
+|:--:| 
+| *Second example*
 
 ## `less -p <pattern>`
 
-![Image](b1.jpg)
+| ![Image](b1.jpg) | 
+|:--:| 
+| *First example*
 
-![Image](b2.jpg)
-
+| ![Image](b2.jpg) | 
+|:--:| 
+| *Second example*
 ## 3. `less -N`
 
-![Image](c1.jpg)
+| ![Image](c1.jpg) | 
+|:--:| 
+| *First example*
 
-![Image](c2.jpg)
+| ![Image](c2.jpg) | 
+|:--:| 
+| *Second example*
 
 ## 4. `less =F`
 
-![Image](d1.jpg)
+| ![Image](d1.jpg) | 
+|:--:| 
+| *First example*
 
-![Image](d2.jpg)
+| ![Image](d2.jpg) | 
+|:--:| 
+| *Second example*
