@@ -72,9 +72,24 @@ less -N /written_2/travel_guides/berlitz1/IntroJapan.txt
 
 ## 4. `less -F`
 
+The final option that we are going to look at is the `-F` option. This option causes `less` to exit if the given file to be displayed can be displayed on the first page/screen. This saves us one additional command to leave the `less` interface if the file is small enough. The first example shows us a case where the file is small enough to be displayed on a single page. So, here, the `-F` option causes `less` to exit. In the second example, the file takes up more lines than can be displayed in the first screen. So, here, the `less` command functions as usual.
+
+First example:
+
+```
+less -F /written_2/travel_guides/berlitz1/WhereToGreek.txt
+```
+
 | ![Image](c1.jpg) | 
 |:--:| 
 | *First example*
+
+
+Second example:
+
+```
+less -F /written_2/travel_guides/berlitz1/IntroJapan.txt
+```
 
 | ![Image](c2.jpg) | 
 |:--:| 
