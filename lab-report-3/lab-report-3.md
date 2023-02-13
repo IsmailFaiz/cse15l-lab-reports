@@ -1,6 +1,6 @@
 # Four ways to use the `less` command
 
-In this lab report, I will be exploring the `less` command in bash. In addition to using the `man` command to access bash's reference manual, I have used the following two links: [1](https://www.geeksforgeeks.org/less-command-linux-examples/) and [2](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/).
+In this lab report, I will be exploring the `less` command in bash. In addition to using the `man` command to access bash's reference manual, I have used the following two links: [[1]](https://www.geeksforgeeks.org/less-command-linux-examples/) and [[2]](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/).
 
 ## 1. `less *` and `:n`, `:p`
 
