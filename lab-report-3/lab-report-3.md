@@ -2,7 +2,10 @@
 
 ## 1. `less *` and `:n`, `:p`
 
-![Image](a1.jpg)
+| ![Image](a1.jpg) | 
+|:--:| 
+| *First example: `less *`* 
+| *First example: `less *`* 
 
 ![Image](a2.jpg)
 
