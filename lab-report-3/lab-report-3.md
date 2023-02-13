@@ -1,6 +1,8 @@
 # Four ways to use the `less` command
 
-In this lab report, I will be exploring the `less` command in bash. In addition to using the `man` command to access bash's reference manual, I have used the following two links: [[1]](https://www.geeksforgeeks.org/less-command-linux-examples/) and [[2]](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/).
+In this lab report, I will be exploring the `less` command in 
+
+. In addition to using the `man` command to access bash's reference manual, I have used the following two links: [[1]](https://www.geeksforgeeks.org/less-command-linux-examples/) and [[2]](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/).
 
 ## 1. `less *` and `:n`, `:p`
 
@@ -38,14 +40,31 @@ The command below tells `less` to start at the first occurrence of pattern "Euro
 less -p /written_2/travel_guides/berlitz1/WhereToMadrid.txt
 ```
 
+The second example below shows the bash interface for the above command.
+
 | ![Image](d2.jpg) | 
 |:--:| 
 | *Second example*
+
 ## 3. `less -N`
+
+Sometimes, we may want to view a file from the command line such that each line is accompanied with its corresponding line number. This can be achieved using the `-N` option. The first example displays the file WhereToGreek.txt with line numbers while the second example does the same for the file IntroJapan.txt.
+
+First example:
+
+```
+less -N /written_2/travel_guides/berlitz1/WhereToGreek.txt
+```
 
 | ![Image](b1.jpg) | 
 |:--:| 
 | *First example*
+
+Second example:
+
+```
+less -N /written_2/travel_guides/berlitz1/IntroJapan.txt
+```
 
 | ![Image](b2.jpg) | 
 |:--:| 
