@@ -20,7 +20,28 @@ Now, `less` command allows us to enter `:n` to go to the next file and `:p` to g
 |:--:| 
 | *Second example*
 
-## `less -p <pattern>`
+## 2. `less -p <pattern>`
+
+The second option we explore highlights all instances of a given pattern and starts display at the first occurrence of the pattern in the file. This could be helpful when we are only interested in a file from the first appearance of a particular pattern. In the first example, we search the file WhereToMadrid.txt for the string "city":
+
+```
+less -p /written_2/travel_guides/berlitz1/WhereToMadrid.txt
+```
+
+| ![Image](d1.jpg) | 
+|:--:| 
+| *First example*
+
+The command below tells `less` to start at the first occurrence of pattern "Europe" in the file WhereToItaly.txt:
+
+```
+less -p /written_2/travel_guides/berlitz1/WhereToMadrid.txt
+```
+
+| ![Image](d2.jpg) | 
+|:--:| 
+| *Second example*
+## 3. `less -N`
 
 | ![Image](b1.jpg) | 
 |:--:| 
@@ -29,22 +50,13 @@ Now, `less` command allows us to enter `:n` to go to the next file and `:p` to g
 | ![Image](b2.jpg) | 
 |:--:| 
 | *Second example*
-## 3. `less -N`
+
+## 4. `less -F`
 
 | ![Image](c1.jpg) | 
 |:--:| 
 | *First example*
 
 | ![Image](c2.jpg) | 
-|:--:| 
-| *Second example*
-
-## 4. `less -F`
-
-| ![Image](d1.jpg) | 
-|:--:| 
-| *First example*
-
-| ![Image](d2.jpg) | 
 |:--:| 
 | *Second example*
