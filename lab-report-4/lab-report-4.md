@@ -20,7 +20,7 @@ Before proceeding with step 4, make sure that you have already completed steps 1
 
 - `cd l<tab> <enter>` : change directory into `lab7/`.
 - `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java <enter>` : compile all the Java files in the directory.
-- `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest <enter>` : run the junit test file.
+- `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest <enter>` : run the JUnit test file.
 
 | ![Image](6.jpg) | 
 |:--:| 
