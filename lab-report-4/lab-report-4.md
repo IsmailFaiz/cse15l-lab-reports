@@ -10,7 +10,7 @@ Before proceeding with step 4, make sure that you have already completed steps 1
 
 ## Step 5
 
-- `git clone <ctrl+V> <enter>` : here, I already had the https link to the Githib repository copied in my clipboard so I simply pasted it to clone it to the remote account.
+- `git clone <ctrl+V><enter>` : here, I already had the https link to the Githib repository copied in my clipboard so I simply pasted it to clone it to the remote account.
 
 | ![Image](5.jpg) | 
 |:--:| 
