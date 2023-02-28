@@ -2,6 +2,8 @@ Before proceeding with step 4, make sure that you have already completed steps 1
 
 ## Step 4
 
+- `ssh cs15lwi23ada@ieng6.ucsd.edu <enter>`: this establishes the remote connection.
+
 | ![Image](4.jpg) | 
 |:--:| 
 | *Step 4*
