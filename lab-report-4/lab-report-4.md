@@ -10,17 +10,25 @@ Before proceeding with step 4, make sure that you have already completed steps 1
 
 ## Step 5
 
+- `git clone <ctrl+V> <enter>` : here, I already had the https link to the Githib repository copied in my clipboard so I simply pasted it to clone it to the remote account.
+
 | ![Image](5.jpg) | 
 |:--:| 
 | *Step 5*
 
 ## Step 6
 
+- `cd l<tab> <enter>` : change directory into `lab7/`.
+- `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java <enter>` : compile all the Java files in the directory.
+- `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTest <enter>` : run the junit test file.
+
 | ![Image](6.jpg) | 
 |:--:| 
 | *Step 6*
 
 ## Step 7
+
+
 
 | ![Image](7a.jpg) | 
 | ![Image](7b.jpg) | 
