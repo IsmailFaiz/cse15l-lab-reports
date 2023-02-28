@@ -28,7 +28,8 @@ Before proceeding with step 4, make sure that you have already completed steps 1
 
 ## Step 7
 
-
+- `vim ListExamples.java <enter>` : enter vim text editor to edit the code file to fix the bug.
+- Move around the file using the `<up>` and `<down>` keys and make the required changes using `<insert>` and `<delete>` keys. When done, press `<esc>` and then type `wq` to save and quit.
 
 | ![Image](7a.jpg) | 
 | ![Image](7b.jpg) | 
@@ -37,11 +38,18 @@ Before proceeding with step 4, make sure that you have already completed steps 1
 
 ## Step 8
 
+- `<up><up><up><enter>` : this retrieves the command to compile from history.
+- `<up><up><up><enter>` : this retrieves the command to run the JUnit test file from history.
+
 | ![Image](8.jpg) | 
 |:--:| 
 | *Step 8*
 
 ## Step 9
+
+- `git add .<enter>` : moves all files to the staging area.
+- `git commit -m "updated"<enter>` : makes a new commit.
+- `git push origin main<enter>` : pushes commits to Github repository. 
 
 | ![Image](9.jpg) | 
 |:--:| 
