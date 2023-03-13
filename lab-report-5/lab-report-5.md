@@ -1,94 +1,97 @@
 # Four ways to use the `find` command
 
-In this lab report, I will be exploring the `find` command in bash. In addition to using the `man` command to access bash's reference manual, I have used the following resources: [[1]](https://www.geeksforgeeks.org/less-command-linux-examples/) and [[2]](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-effective-navigation/).
+In this lab report, I will be exploring the `find` command in bash. In addition to using the `man` command to access bash's reference manual, I have used the following resources: [[1]](https://www.redhat.com/sysadmin/linux-find-command) and [[2]](https://adamtheautomator.com/bash-find/).
 
-## 1. `less *` and `:n`, `:p`
+## 1. `find` with `-name` or `-iname`
 
-The first functionality we explore is the multiple file navigation. This could be useful when we wnat to have a look at more than one file in a directory without having to write a command for each of them. Following is a sample code snippet that helps achieve this:
+The first functionality we explore is using `find` to find files with a particular name or an approximate name. This could be useful when we want to find many files with similar names. Following is a sample code snippet that searches for txt files that start with "ch": 
 
 ```
-less written_2/non-fiction/OUP/Abernathy/*
+find -name "ch*.txt"
 ```
 
-Now, `less` command allows us to enter `:n` to go to the next file and `:p` to go to the previous file. The first example shows the bash interface for the former while the second example shows the bash interface for the latter.
+The first example shows this on the written_2/ folder:
 
-| ![Image](a1.jpg) | 
+| ![Image](a1.png) | 
 |:--:| 
 | *First example*
 
-| ![Image](a2.jpg) | 
+If we do not want the search to be search sensitive, we can use the `-iname` option instead. It does the same thing as `-name` except that it outputs all occurrences of the argument string regardless of the case.
+
+```
+find -iname "ch*.txt"
+```
+
+The second example below shows the bash interface for the above command. In our case it 
+
+| ![Image](a2.png) | 
 |:--:| 
 | *Second example*
 
-## 2. `less -p <pattern>`
+## 2. `-type` option
 
-The second option we explore highlights all instances of a given pattern and starts display at the first occurrence of the pattern in the file. This could be helpful when we are only interested in a file from the first appearance of a particular pattern. In the first example, we search the file WhereToMadrid.txt for the string "city":
-
-```
-less -p /written_2/travel_guides/berlitz1/WhereToMadrid.txt
-```
-
-| ![Image](d1.jpg) | 
-|:--:| 
-| *First example*
-
-The command below tells `less` to start at the first occurrence of pattern "Europe" in the file WhereToItaly.txt:
-
-```
-less -p /written_2/travel_guides/berlitz1/WhereToMadrid.txt
-```
-
-The second example below shows the bash interface for the above command.
-
-| ![Image](d2.jpg) | 
-|:--:| 
-| *Second example*
-
-## 3. `less -N`
-
-Sometimes, we may want to view a file from the command line such that each line is accompanied with its corresponding line number. This can be achieved using the `-N` option. The first example displays the file WhereToGreek.txt with line numbers while the second example does the same for the file IntroJapan.txt.
+Sometimes, we may only be interested in finding certain types of items in a folder. The `-type` option comes in handy here. You can use the `f` argument for searching for file types as in the first example and the `d` argument for searching for directory or folder types as in the second example.
 
 First example:
 
 ```
-less -N /written_2/travel_guides/berlitz1/WhereToGreek.txt
+find -iname "*history*.txt" -type f
 ```
 
-| ![Image](b1.jpg) | 
+| ![Image](b1.png) | 
 |:--:| 
 | *First example*
 
-Second example:
+Second example searching folders:
 
 ```
-less -N /written_2/travel_guides/berlitz1/IntroJapan.txt
+find -type d
 ```
 
-| ![Image](b2.jpg) | 
+| ![Image](b2.png) | 
 |:--:| 
 | *Second example*
 
-## 4. `less -F`
+## 3. `-maxdepth` and `-mindepth` options
 
-The final option that we are going to look at is the `-F` option. This option causes `less` to exit if the given file to be displayed can be displayed on the first page/screen. This saves us one additional command to leave the `less` interface if the file is small enough. The first example shows us a case where the file is small enough to be displayed on a single page. So, here, the `-F` option causes `less` to exit. In the second example, the file takes up more lines than can be displayed in the first screen. So, here, the `less` command functions as usual.
-
-First example:
+More often than not, you only want to search a particular folder to a certain depth. The `-maxdepth` option lets you do exactly that. Following is an example using `-maxdepth` to search `written_2/` to a maximum depth of 2:
 
 ```
-less -F /written_2/travel_guides/berlitz1/WhereToGreek.txt
+find -maxdepth 2
 ```
 
-| ![Image](c1.jpg) | 
+| ![Image](c1.png) | 
 |:--:| 
 | *First example*
 
-
-Second example:
+Similarly, you may want to search files only beyond a certain depth sometimes. Analogous to `-maxdepth`, `-mindepth` lets you set the minimum depth of a particular search. The combination of these two options can help set a range of depth between which you want to search for a file. The following example searches `written_2/` between the depths of 2 and 3:
 
 ```
-less -F /written_2/travel_guides/berlitz1/IntroJapan.txt
+find -maxdepth 3 -mindepth 2
 ```
 
-| ![Image](c2.jpg) | 
+| ![Image](c2.png) | 
+|:--:| 
+| *Second example*
+
+## 4. `-maxdepth` and `-mindepth` options
+
+More often than not, you only want to search a particular folder to a certain depth. The `-maxdepth` option lets you do exactly that. Following is an example using `-maxdepth` to search `written_2/` to a maximum depth of 2:
+
+```
+find -maxdepth 2
+```
+
+| ![Image](d1.png) | 
+|:--:| 
+| *First example*
+
+Similarly, you may want to search files only beyond a certain depth sometimes. Analogous to `-maxdepth`, `-mindepth` lets you set the minimum depth of a particular search. The combination of these two options can help set a range of depth between which you want to search for a file. The following example searches `written_2/` between the depths of 2 and 3:
+
+```
+find -maxdepth 3 -mindepth 2
+```
+
+| ![Image](d2.png) | 
 |:--:| 
 | *Second example*
