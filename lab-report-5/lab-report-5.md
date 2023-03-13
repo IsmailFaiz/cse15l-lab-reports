@@ -74,22 +74,22 @@ find -maxdepth 3 -mindepth 2
 |:--:| 
 | *Second example*
 
-## 4. `-maxdepth` and `-mindepth` options
+## 4. `-ipath` option
 
-More often than not, you only want to search a particular folder to a certain depth. The `-maxdepth` option lets you do exactly that. Following is an example using `-maxdepth` to search `written_2/` to a maximum depth of 2:
+Sometimes, you may know a fragment of the path to a file or files you are searching for. In these cases, you can use the `-ipath` option. This option is similar to the `-iname` option in that it allows you to set a format or template of the path of the files you are searching for. Following is an example of searching for files in `written_2/` that have `berlitz1/His` in their paths:
 
 ```
-find -maxdepth 2
+find -ipath "*berlitz1/his*"
 ```
 
 | ![Image](d1.png) | 
 |:--:| 
 | *First example*
 
-Similarly, you may want to search files only beyond a certain depth sometimes. Analogous to `-maxdepth`, `-mindepth` lets you set the minimum depth of a particular search. The combination of these two options can help set a range of depth between which you want to search for a file. The following example searches `written_2/` between the depths of 2 and 3:
+In the next example, we want to search for files that are in a folder named `Abernathy` whose some parent folder is `non-fiction` : 
 
 ```
-find -maxdepth 3 -mindepth 2
+find -ipath "*non-fiction/*/Abernathy*"
 ```
 
 | ![Image](d2.png) | 
