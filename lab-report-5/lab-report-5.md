@@ -4,7 +4,7 @@ In this lab report, I will be exploring the `find` command in bash. In addition 
 
 ## 1. `find` with `-name` or `-iname`
 
-The first functionality we explore is using `find` to find files with a particular name or an approximate name. This could be useful when we want to find many files with similar names. Following is a sample code snippet that searches for txt files that start with "ch": 
+The first functionality we explore is using `find` to find files with a particular name or an approximate name. This could be useful when we want to find many files with similar names. Following is a sample code snippet that searches for text files that start with "ch": 
 
 ```
 find -name "ch*.txt"
@@ -16,13 +16,13 @@ The first example shows this on the written_2/ folder:
 |:--:| 
 | *First example*
 
-If we do not want the search to be search sensitive, we can use the `-iname` option instead. It does the same thing as `-name` except that it outputs all occurrences of the argument string regardless of the case.
+If we do not want the search to be search sensitive, we can use the `-iname` option instead. It does the same thing as `-name` except that it outputs all occurrences of the argument-string regardless of its case.
 
 ```
 find -iname "ch*.txt"
 ```
 
-The second example below shows the bash interface for the above command. In our case it 
+The second example below shows the bash interface for the above command.
 
 | ![Image](a2.png) | 
 |:--:| 
